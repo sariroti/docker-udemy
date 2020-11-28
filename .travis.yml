@@ -6,7 +6,7 @@ before_install:
   - docker build -t sariroti/docker-udemy -f Dockerfile .
 
 script:
-  - docker run sariroti/docker-udemy npm run test -- --coverage
+  - docker run sariroti/docker-udemy npm run test
 
 deploy:
   provider: elasticbeanstalk
