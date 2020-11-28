@@ -3,9 +3,9 @@ services:
   - docker 
 
 before_install:
-  - docker build -t sariroti/docker-udemy -f Dockerfile.dev .
+  - docker build -t sariroti/docker-udemy -f Dockerfile .
 
 script:
-  - docker run sariroti/docker-udemy npm run test 
+  - docker run sariroti/docker-udemy npm run test -- --coverage
 
   
